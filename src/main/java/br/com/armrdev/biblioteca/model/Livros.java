@@ -13,20 +13,19 @@ public class Livros {
     private String autor;
     private String anoDeLancamento;
     private int estoque;
-    private int emprestimos;
+    private int emprestimos = 0;
 
-    public Livros(String nome, String autor, String anoDeLancamento, int estoque, int emprestimos) {
+    public Livros(String nome, String autor, String anoDeLancamento, int estoque) {
         this.nome = nome;
         this.autor = autor;
         this.anoDeLancamento = anoDeLancamento;
         this.estoque = estoque;
-        this.emprestimos = emprestimos;
     }
 
     @Override
     public String toString() {
         
-        return  "Livro: " + this.nome + " Autor: " + this.autor +" Ano de lançamento: " + this.anoDeLancamento +" Disponível: " + (this.estoque - this.emprestimos);
+        return  "Livro: " + this.nome + ", Autor: " + this.autor +", Ano de lançamento: " + this.anoDeLancamento +", Disponível: " + (this.estoque - this.emprestimos);
     }
     
     
