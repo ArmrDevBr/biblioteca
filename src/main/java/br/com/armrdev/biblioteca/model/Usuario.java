@@ -12,14 +12,13 @@ public class Usuario {
 
     private String nome;
     private String email;
+    private String escola;
 
-    public Usuario(String nome, String email) {
+    public Usuario(String nome, String email, String escola) {
         this.nome = nome;
         this.email = email;
-    }
-
-    public Usuario() {
-
+        this.escola = escola;
+        
     }
 
     public void setEmail(String email) {
@@ -38,4 +37,13 @@ public class Usuario {
         return nome;
     }
 
+    public void setEscola(String escola) {
+        this.escola = escola;
+    }
+
+    public String getEscola() {
+        return escola;
+    }
+    
+    
 }
