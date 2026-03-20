@@ -14,7 +14,7 @@ public class Emprestimo {
     private Usuario usuario;
     private ArrayList<Livros> livros;
     
-    Emprestimo(Usuario usuario){
+    public Emprestimo(Usuario usuario){
         this.usuario = usuario;
     }
     
