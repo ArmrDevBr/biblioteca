@@ -24,6 +24,11 @@ public class Aluno extends Usuario {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString() {
+        return "Aluno: "+ this.getNome() + " idade:" + idade + " escola:" + this.getEscola();
+    }
     
     
 }
